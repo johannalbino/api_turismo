@@ -10,6 +10,8 @@ django-filter = "*"
 python-decouple = "*"
 drf-yasg = "*"
 psycopg2 = "*"
+gunicorn = "*"
+flake8 = "*"
 
 [dev-packages]
 

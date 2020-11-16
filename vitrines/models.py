@@ -31,6 +31,13 @@ class Category(models.Model):
         db_table = 'category'
 
 
+class About(models.Model):
+    sobre = models.TextField("Descrição sobre o hotel.")
+
+    class Meta:
+        db_table = 'about'
+
+
 class Vitrines(models.Model):
 
     hotel_name = models.CharField("Nome do hotel", max_length=255)

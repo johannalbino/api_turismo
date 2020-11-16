@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from vitrines.models import Vitrines, Country, Category, City
+from vitrines.models import Vitrines, Country, Category, City, About
 
 
 class CountrySerializer(ModelSerializer):
@@ -21,6 +21,13 @@ class CitySerializer(ModelSerializer):
     class Meta:
         model = City
         fields = ['city_name', 'slug', 'state']
+
+
+class SobreSerializer(ModelSerializer):
+
+    class Meta:
+        model = About
+        fields = ['sobre']
 
 
 class VitrinesSerializer(ModelSerializer):
