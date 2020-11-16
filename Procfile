@@ -1,1 +1,1 @@
-web: gunicorn company_hero.wsgi --log-file
+web: gunicorn turismo.wsgi --log-file
