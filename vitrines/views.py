@@ -19,18 +19,18 @@ class VitrinesViewSet(GenericAPIView):
         if 'sobre' in filter_routes[0]:
             serializer = self.get_serializer(About.objects.all(), many=True)
             return Response(serializer.data)
-        else:
-            queryset = self.filter_queryset(Vitrines.objects.all())
-            page = self.paginate_queryset(queryset)
-            if page is not None:
-                serializer = self.get_serializer(page, many=True)
-                response = {
-                    "title": "Melhores Hotéis",
-                    "subtitle": "Veja os hotéis mais procurados",
-                    "routes": ["/", "/destinos"],
-                    "itens": serializer.data
-                }
-                return Response(response)
+
+        queryset = self.filter_queryset(Vitrines.objects.all())
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            response = {
+                "title": "Melhores Hotéis",
+                "subtitle": "Veja os hotéis mais procurados",
+                "routes": ["/", "/destinos"],
+                "itens": serializer.data
+            }
+            return Response(response)
 
     def get(self, request, *args, **kwargs):
         queryset = self.filter_queryset(Vitrines.objects.all())
