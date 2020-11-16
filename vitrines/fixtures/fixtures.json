@@ -1,0 +1,157 @@
+[
+    {
+        "model": "vitrines.Country",
+        "pk": 1,
+        "fields": {
+            "country_name": "Brasil",
+            "slug": "brazil",
+            "country_code": 55
+        }
+    },
+    {
+        "model": "vitrines.City",
+        "pk": 1,
+        "fields": {
+            "city_name": "Belo Horizonte",
+            "slug": "BH",
+            "state": "Minas Gerais",
+            "country": 1
+        }
+    },
+    {
+        "model": "vitrines.City",
+        "pk": 2,
+        "fields": {
+            "city_name": "Florianopolis",
+            "slug": "FLO",
+            "state": "Santa Catarina",
+            "country": 1
+        }
+    },
+    {
+        "model": "vitrines.City",
+        "pk": 3,
+        "fields": {
+            "city_name": "São Paulo",
+            "slug": "SP",
+            "state": "São Paulo",
+            "country": 1
+        }
+    },
+    {
+        "model": "vitrines.City",
+        "pk": 4,
+        "fields": {
+            "city_name": "Porto Alegre",
+            "slug": "PA",
+            "state": "Rio Grande do Sul",
+            "country": 1
+        }
+    },
+    {
+        "model": "vitrines.City",
+        "pk": 5,
+        "fields": {
+            "city_name": "Barra da Tijuca",
+            "slug": "BT",
+            "state": "Rio de Janeiro",
+            "country": 1
+        }
+    },
+    {
+        "model": "vitrines.City",
+        "pk": 6,
+        "fields": {
+            "city_name": "Guarapari",
+            "slug": "GRP",
+            "state": "Espirito Santo",
+            "country": 1
+        }
+    },
+    {
+        "model": "vitrines.Category",
+        "pk": 1,
+        "fields": {
+            "category_name": "Hospedagem",
+            "slug": "hospedagem"
+        }
+    },
+    {
+        "model": "vitrines.Vitrines",
+        "pk": 1,
+        "fields": {
+            "hotel_name": "Teste",
+            "slug": "teste 1",
+            "image": "http://sbtur.com/images/aj-termas-irai.jpg",
+            "city": 1,
+            "country": 1,
+            "category": 1,
+            "price": 5000.00
+        }
+    },
+    {
+        "model": "vitrines.Vitrines",
+        "pk": 2,
+        "fields": {
+            "hotel_name": "Teste",
+            "slug": "teste 2",
+            "image": "http://sbtur.com/images/aj-termas-irai.jpg",
+            "city": 2,
+            "country": 1,
+            "category": 1,
+            "price": 500.00
+        }
+    },
+    {
+        "model": "vitrines.Vitrines",
+        "pk": 3,
+        "fields": {
+            "hotel_name": "Teste",
+            "slug": "teste 3",
+            "image": "http://sbtur.com/images/aj-termas-irai.jpg",
+            "city": 3,
+            "country": 1,
+            "category": 1,
+            "price": 800.00
+        }
+    },
+    {
+        "model": "vitrines.Vitrines",
+        "pk": 4,
+        "fields": {
+            "hotel_name": "Teste",
+            "slug": "teste 1",
+            "image": "http://sbtur.com/images/aj-termas-irai.jpg",
+            "city": 4,
+            "country": 1,
+            "category": 1,
+            "price": 10.00
+        }
+    },
+    {
+        "model": "vitrines.Vitrines",
+        "pk": 5,
+        "fields": {
+            "hotel_name": "Teste",
+            "slug": "teste 1",
+            "image": "http://sbtur.com/images/aj-termas-irai.jpg",
+            "city": 5,
+            "country": 1,
+            "category": 1,
+            "price": 470.00
+        }
+    },
+    {
+        "model": "vitrines.Vitrines",
+        "pk": 6,
+        "fields": {
+            "hotel_name": "Teste",
+            "slug": "teste 1",
+            "image": "http://sbtur.com/images/aj-termas-irai.jpg",
+            "city": 6,
+            "country": 1,
+            "category": 1,
+            "price": 50.00
+        }
+    }
+]

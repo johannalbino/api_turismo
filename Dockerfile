@@ -5,16 +5,13 @@ FROM python:3.8-slim-buster
 ENV PYTHONUNBUFFERED 1
 
 # Cria a pasta do projeto /code
-RUN mkdir /srv
-
-# Coloca o /code como diretório principal
 WORKDIR /srv
 
 # Adiciona o requirements.txt na pasta code
-ADD Pipfile* .
+ADD Pipfile* ./
 
 # Instala as dependencias do projeto no docker
-RUN pip install pipenv && pipenv install && pipenv shell
+RUN pip install --no-cache -U pip pipenv && pipenv install --system
 
 # Adicionar o código no /code/
 ADD . /srv/
